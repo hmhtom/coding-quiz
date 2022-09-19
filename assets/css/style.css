@@ -1,0 +1,93 @@
+*{
+    user-select: none;
+}
+body{
+
+}
+button{
+    border-radius: 5px;
+    border: 0;
+    background-color: #8F46D8;
+    color: white;
+    padding: 0 5px 0 5px;
+}
+button:hover{
+    background-color: #AD75E6;
+}
+
+/*Status bar area*/
+#status-area{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Status bar view score button*/
+#viewscore-button{
+    border: 0;
+    background-color: lightgray;
+    font-size: 1.2em;
+    color:#8F46D8;
+    font-weight: bolder;
+}
+/*Status bar Timer area*/
+#timer-area{
+    font-size: 2em;
+    color:#8F46D8
+}
+/*Status bar timer*/
+#timer{
+    color:black
+}
+
+/*Main content container*/
+.main-container{
+    position: relative;
+    top:10vh;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+/*quiz area*/
+#quiz-area{
+    display: none;
+    flex-direction: column;
+}
+/*question area*/
+#question-area{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+/*answer area*/
+#answer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 300px;
+}
+/*answer-button with hover effect*/
+.answer-button{
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 0;
+    background-color: #8F46D8;
+    color: white;
+    padding: 0 5px 0 5px;
+}
+
+/*starting page*/
+#start-page{
+    text-align: center;
+}
+#start-page h1{
+    text-align: center;
+    font-size: 5em;
+}
+#start-button{
+    font-size: 3em;
+    margin-top: 20vh;
+}
