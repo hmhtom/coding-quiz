@@ -1,9 +1,7 @@
 *{
     user-select: none;
 }
-body{
-
-}
+/*Button general style with hover and click effect*/
 button{
     border-radius: 5px;
     border: 0;
@@ -31,7 +29,7 @@ button:active{
     padding-right: 20px;
 }
 /*Status bar view score button*/
-#viewscore-button{
+#maintitle-button{
     border: 0;
     background-color: lightgray;
     color:#8F46D8;

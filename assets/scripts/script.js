@@ -25,7 +25,7 @@ let quizScore
 let questionIndex
 let timer
 let scoreList
-
+//Question list contains all the questions(question:String, choice:Array, answer:String)
 const questionList = [{
     question:"document.querySelectorAll() will return a ____ representing all the document's elements that match the selector.",
     choice:["array", "string", "nodelist", "selector ID"],
@@ -164,7 +164,6 @@ function renderHighScorePage(){
 startBtn.addEventListener("click", e => {
     quiz(90)
 })
-
 //Click event answer buttons
 answerBox.addEventListener("click", e => {
     var element = e.target
@@ -189,7 +188,7 @@ answerBox.addEventListener("click", e => {
         quizStart=false
     }
 })
-
+//Click event for submit button
 submitBtn.addEventListener("click", e => {
     if(initialInput.value.trim().length === 0){
         alert("Please enter your initial.")
@@ -208,12 +207,12 @@ submitBtn.addEventListener("click", e => {
     }
     
 })
-
+//Click event for restart button
 restartBtn.addEventListener("click", e => {
     highScoreList.innerHTML = ""
     renderStartPage()
 })
-
+//Click event for clear score button
 clearBtn.addEventListener("click", e => {
     highScoreList.innerHTML = ""
     localStorage.removeItem("scorelist")
