@@ -10,9 +10,13 @@ button{
     background-color: #8F46D8;
     color: white;
     padding: 0 5px 0 5px;
+    font-size: 1.5em;
 }
 button:hover{
     background-color: #AD75E6;
+}
+button:active{
+    background-color: #8F46D8;
 }
 
 /*Status bar area*/
@@ -30,7 +34,6 @@ button:hover{
 #viewscore-button{
     border: 0;
     background-color: lightgray;
-    font-size: 1.2em;
     color:#8F46D8;
     font-weight: bolder;
 }
@@ -51,15 +54,30 @@ button:hover{
     margin-left: 30%;
     margin-right: 30%;
 }
-/*quiz area*/
-#quiz-area{
-    display: none;
+
+/*Quiz Starting page*/
+#start-container{
+    text-align: center;
+    flex-direction: column;
+}
+#start-container h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+#start-button{
+    font-size: 2em;
+    margin-top: 10vh;
+}
+
+/*Quiz area*/
+#quiz-container{
     flex-direction: column;
 }
 /*question area*/
 #question-area{
-    font-size: 2.5em;
-    font-weight: bolder;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 /*answer area*/
 #answer-area{
@@ -69,25 +87,35 @@ button:hover{
     justify-content: space-around;
     min-height: 300px;
 }
-/*answer-button with hover effect*/
-.answer-button{
+
+/*Quiz-finishing page*/
+#finish-container{
+    flex-direction: column;
+}
+#finish-container h2{
+    font-size: 3em;
+}
+#final-score-area{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     font-size: 1.5em;
-    border-radius: 5px;
-    border: 0;
-    background-color: #8F46D8;
-    color: white;
-    padding: 0 5px 0 5px;
+}
+#initial-input{
+    border-radius: 20px;
+    padding: 10px;
 }
 
-/*starting page*/
-#start-page{
-    text-align: center;
+/*Highscore Page*/
+#highscore-container{
+    flex-direction: column;
 }
-#start-page h1{
-    text-align: center;
-    font-size: 5em;
-}
-#start-button{
+#highscore-container h2{
     font-size: 3em;
-    margin-top: 20vh;
+}
+#highscore-list{
+    background-color: #AD75E6;
+    list-style: decimal inside;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
 }

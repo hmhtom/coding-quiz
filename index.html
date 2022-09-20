@@ -9,24 +9,75 @@
     <title>Coding Quiz</title>
   </head>
   <body>
+    <!--Status Bar with Viewscore button and Timer-->
     <div id="status-area">
       <button id="viewscore-button">viewscore</button>
-      <div id="timer-area">Time: <span id="timer">12</span></div>
+      <div id="timer-area">Time: <span id="timer"></span></div>
     </div>
-    <div class="main-container" id="quiz-area">
-      <div id="question-area">Following items what is a primitive type:</div>
-      <div id="answer-area">
-        <button class="answer-button" id="answer-button-1">1. string</button>
-        <button class="answer-button" id="answer-button-2">2. boolean</button>
-        <button class="answer-button" id="answer-button-3">3. car</button>
-        <button class="answer-button" id="answer-button-4">4. undefined</button>
-      </div>
-      <div id="question-result">Wrong Answer</div>
-    </div>
-    <div class="main-container" id="start-page">
-      <h1>Code Quiz</h1>
+    <!--Container with starting page with start button-->
+    <div class="main-container" id="start-container">
+      <h1>Code Quiz Challenge</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ut
+        urna non convallis. Sed congue eros vitae velit feugiat sagittis.
+        Vestibulum vel nisl pellentesque, convallis nisl ultrices, facilisis
+        velit. Donec est turpis, finibus id nunc rutrum, mattis ultricies orci.
+        Curabitur hendrerit, diam non pellentesque ullamcorper, nulla sem
+        viverra tellus, auctor tempor lacus urna eu tellus. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Nullam sagittis,
+        lectus ut malesuada pharetra, quam tellus finibus elit, vitae maximus
+        lectus urna ac tortor.
+      </p>
       <button id="start-button">Start Quiz</button>
     </div>
-    <script src="./assets/scripts/script.js"></script>
+    <!--Container for the quiz-->
+    <div class="main-container" id="quiz-container">
+      <div id="question-area"></div>
+      <div id="answer-area">
+        <button
+          class="answer-button"
+          id="answer-button-1"
+          data-index="1"
+        ></button>
+        <button
+          class="answer-button"
+          id="answer-button-2"
+          data-index="2"
+        ></button>
+        <button
+          class="answer-button"
+          id="answer-button-3"
+          data-index="3"
+        ></button>
+        <button
+          class="answer-button"
+          id="answer-button-4"
+          data-index="4"
+        ></button>
+      </div>
+      <div id="question-result"></div>
+    </div>
+    <!--Quiz finishing page where you can input your name-->
+    <div class="main-container" id="finish-container">
+      <h2>Quiz done!</h2>
+      <div id="final-score-area">
+        Your final score is <span id="final-score"></span>
+      </div>
+      <div>
+        <label for="initial-input">Enter your initial: </label>
+        <input type="text" name="initial-input" id="initial-input" />
+        <button id="submit-button">Submit</button>
+      </div>
+    </div>
+    <div class="main-container" id="highscore-container">
+      <h2>High Score</h2>
+      <ol id="highscore-list"></ol>
+      <div>
+        <button id="restart-button">Go Back</button>
+        <button id="clear-button">Clear Score</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./assets/scripts/script.js"></script>
   </body>
 </html>
